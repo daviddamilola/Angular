@@ -1,0 +1,8 @@
+<div *ngFor="let message of messages">
+    <b>{{message.author}}</b> says: {{ message.message }}
+</div>
+<div>Name: </div>
+<input type="text" [(ngModel)]="currentAuthor" />
+<div>Message:</div>
+<input type="text" [(ngModel)]="currentMessage" />
+<button (click)="sendMessage()">Send</button>
